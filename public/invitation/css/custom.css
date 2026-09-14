@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Custom Responsive and Layout Enhancements for Dolce Vita Invitation
+   ========================================================================== */
+
+/* Prevent horizontal viewport blowouts */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure proper font rendering for Kurdish Sorani & Arabic scripts */
+body, [dir="rtl"] {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   Schedule of Events: Layering & Cloud Overlap Fix
+   -------------------------------------------------------------------------- */
+/* Cloud images must remain in the background, never covering the timeline text */
+#rec2442651033 .tn-elem[data-elem-id="1776876503947"],
+#rec2442651033 .tn-elem[data-elem-id="1776876608318000001"] {
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+/* Timeline elements and group items always sit securely above clouds */
+#rec2442651033 .t396__group,
+#rec2442651033 .tn-elem[data-elem-id="1763405219328"],
+#rec2442651033 .tn-elem[data-elem-id="1772803124037"],
+#rec2442651033 .tn-elem[data-elem-id^="1776878"],
+#rec2442651033 .tn-elem[data-elem-id="1772803062504"],
+#rec2442651033 .tn-elem[data-elem-id="1763405268776"],
+#rec2442651033 .tn-elem[data-elem-id="1772803288793000002"],
+#rec2442651033 .tn-elem[data-elem-id="1772803288793000003"],
+#rec2442651033 .tn-elem[data-elem-id="1772803465944000005"],
+#rec2442651033 .tn-elem[data-elem-id="1772803465944000006"],
+#rec2442651033 .tn-elem[data-elem-id="1772803619332000008"],
+#rec2442651033 .tn-elem[data-elem-id="1772803619332000009"],
+#rec2442651033 .tn-elem[data-elem-id="1776687683335000001"],
+#rec2442651033 .tn-elem[data-elem-id="1776687683335000002"],
+#rec2442651033 .tn-elem[data-elem-id="1776878815963000012"],
+#rec2442651033 .tn-elem[data-elem-id="1776878815963000013"] {
+  z-index: 5 !important;
+}
+
+/* Ensure schedule groups allow their text to overflow without clipping */
+#rec2442651033 .t396__group {
+  overflow: visible !important;
+}
+
+#rec2442651033 .tn-elem {
+  overflow: visible !important;
+}
+
+/* --------------------------------------------------------------------------
+   Floating Audio Player Button Responsive Positioning
+   -------------------------------------------------------------------------- */
+#audio-control {
+  transition: all 0.3s ease !important;
+}
+
+/* In RTL mode, position audio button on the bottom left so it never blocks Kurdish/Arabic reading flow or scratch tiles */
+html[dir="rtl"] #audio-control,
+body[dir="rtl"] #audio-control {
+  right: auto !important;
+  left: 24px !important;
+}
+
+@media (max-width: 768px) {
+  #audio-control {
+    width: 48px !important;
+    height: 48px !important;
+    bottom: 16px !important;
+  }
+  html[dir="rtl"] #audio-control,
+  body[dir="rtl"] #audio-control {
+    left: 16px !important;
+  }
+  #audio-icon {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   RSVP Modal & Form Styling
+   -------------------------------------------------------------------------- */
+.t702__wrapper {
+  max-width: 580px !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.t-submit button {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.t-submit button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,293 @@
+{
+  "defaultId": "alan-u-shanya",
+  "weddings": {
+    "alan-u-shanya": {
+      "id": "alan-u-shanya",
+      "language": "ckb",
+      "direction": "rtl",
+      "couple": {
+        "groom": "ئالان",
+        "bride": "شانیا",
+        "symbol": "و",
+        "combined": "ئالان و شانیا",
+        "subtitle": "ئاهەنگی هاوسەرگیری"
+      },
+      "sealText": "بۆ کردنەوە کلیک بکە",
+      "hero": {
+        "areGettingMarried": "هاوسەرگیری دەکەن",
+        "dateShort": "١٤.٠٩.٢٠٢٦"
+      },
+      "dateReveal": {
+        "title": "بەرواری ئاهەنگ",
+        "scratchInstruction": "✦ پەنجە بخشێنە بۆ بینینی بەروار ✦",
+        "day": "١٤",
+        "month": "ئەیلوول",
+        "year": "٢٠٢٦",
+        "dayLabel": "ڕۆژ",
+        "monthLabel": "مانگ",
+        "yearLabel": "ساڵ",
+        "revealBanner": "بەخێربێن بۆ ئاهەنگەکەمان!"
+      },
+      "welcome": {
+        "title": "کەسوکار و هاوڕێیانی خۆشەویست،",
+        "message": "لە ساتێکدا کە خۆمان ئامادە دەکەین بۆ دەستپێکردنی ژیانێکی نوێ پێکەوە، دڵمان پڕە لە سوپاسگوزاری بۆ هەموو ئەو کەسە ئازیزانەی ژیانمانیان ڕازاندووەتەوە. ئامادەبوون و هاوبەشیتان لەم شەوە پیرۆزەدا، مایەی خۆشحاڵی و شانازییەکی گەورەیە بۆ ئێمە."
+      },
+      "schedule": {
+        "heading": "خشتەی کاتی بەرنامەکان",
+        "items": [
+          {
+            "time": "١٦:٣٠",
+            "title": "پێشوازی و کرانەوەی دەرگا"
+          },
+          {
+            "time": "١٧:٠٠",
+            "title": "مەراسیمی عەقد و مارەکردن"
+          },
+          {
+            "time": "١٨:٠٠",
+            "title": "کۆکتێل و شایی و هەڵپەڕکێ"
+          },
+          {
+            "time": "٢٠:٠٠",
+            "title": "مەراسیمی شامی فاخیر"
+          },
+          {
+            "time": "٢١:٠٠",
+            "title": "ئاهەنگ و مۆسیقای زیندوو"
+          },
+          {
+            "time": "٢٣:٠٠",
+            "title": "کۆتاییهاتنی ئاهەنگ"
+          }
+        ]
+      },
+      "venue": {
+        "heading": "شوێنی ئاهەنگ",
+        "name": "تەلاری ڤێلا بۆرگێسی",
+        "address": "ناونیشان: شەقامی مەلیک مەحموود، شاری سلێمانی",
+        "mapUrl": "https://maps.google.com"
+      },
+      "dressCode": {
+        "heading": "کۆدی پۆشینی جلوبەرگ",
+        "intro": "زۆر دڵخۆش دەبین ئەگەر جلی بەڕێزتان لەگەڵ ڕەنگەکانی تیمی ئاهەنگەکەدا گونجاو بێت.",
+        "colorsLabel": "ڕەنگە پێشنیارکراوەکان:",
+        "guidance": "خانمان: جلی کوردی دەوڵەمەند یان جلی ئێوارانی شاهانە بە ڕەنگە نەرمەکان. پیاوان: قاتی فەرمی کلاسیک یان جلی کوردی ڕەسەن بە ڕەنگە قاوەیی و شین و گۆڵد."
+      },
+      "rsvp": {
+        "heading": "پشتڕاستکردنەوەی ئامادەبوون",
+        "sub": "بۆ ئەوەی بە باشترین شێوە پێشوازیتان لێ بکەین، تکایە ئامادەبوونتان پێشوەختە دیاری بکەن.",
+        "nameLabel": "ناوی تەواوتان",
+        "namePlaceholder": "ناوی بەڕێزتان لێرە بنووسن...",
+        "attendLabel": "ئایا بەشدار دەبن؟",
+        "options": [
+          "بەڵێ، بە کەیفخۆشییەوە بەشدار دەبم",
+          "بەداخەوە ناتوانم ئامادەبم",
+          "دواتر هەواڵتان پێدەدەمەوە"
+        ],
+        "foodLabel": "تێبینی تایبەت یان هەستیاریی خۆراک؟",
+        "foodPlaceholder": "ئەگەر هەر تێبینییەکتان هەیە بنووسن...",
+        "buttonLabel": "پشتڕاستکردنەوە",
+        "modalTitle": "پشتڕاستکردنەوەی ئامادەبوون",
+        "modalSubtitle": "تکایە پێش ١ی ئەیلوول ئامادەبوونتان دیاری بکەن",
+        "submitLabel": "ناردن",
+        "successMessage": "زۆر سوپاس بۆ وەڵامەکەتان! چاوەڕوانی بینینتانین."
+      },
+      "footer": {
+        "seeYou": "بە پەرۆشەوە چاوەڕوانی بینینتانین!",
+        "couple": "ئالان و شانیا"
+      }
+    },
+    "ahmad-wa-nour": {
+      "id": "ahmad-wa-nour",
+      "language": "ar",
+      "direction": "rtl",
+      "couple": {
+        "groom": "أحمد",
+        "bride": "نور",
+        "symbol": "و",
+        "combined": "أحمد و نور",
+        "subtitle": "حفل زفاف مبارك"
+      },
+      "sealText": "انقر لفتح الدعوة",
+      "hero": {
+        "areGettingMarried": "يتشرفان بدعوتكم لزفافهما",
+        "dateShort": "١٤.٠٩.٢٠٢٦"
+      },
+      "dateReveal": {
+        "title": "موعد الحفل",
+        "scratchInstruction": "✦ امسح لكشف تاريخ الزفاف ✦",
+        "day": "١٤",
+        "month": "سبتمبر",
+        "year": "٢٠٢٦",
+        "dayLabel": "اليوم",
+        "monthLabel": "الشهر",
+        "yearLabel": "السنة",
+        "revealBanner": "أهلاً وسهلاً بكم في ليلة العمر!"
+      },
+      "welcome": {
+        "title": "الأهل والأصدقاء والأحبة،",
+        "message": "بينما نستعد لنبدأ رحلة حياتنا معاً، نملأ قلوبنا بالامتنان لوجودكم بجانبنا. دعمكم ومحبتكم يعنيان لنا الكثير، ويشرفنا ويسعدنا جداً حضوركم لتشاركونا أجمل لحظات الفرح في ليلة العمر."
+      },
+      "schedule": {
+        "heading": "برنامج الحفل",
+        "items": [
+          {
+            "time": "١٦:٣٠",
+            "title": "استقبال الضيوف الكرام"
+          },
+          {
+            "time": "١٧:٠٠",
+            "title": "مراسم عقد القران والزفة"
+          },
+          {
+            "time": "١٨:٠٠",
+            "title": "استراحة الكوكتيل والموسيقى"
+          },
+          {
+            "time": "٢٠:٠٠",
+            "title": "مأدبة العشاء الفاخرة"
+          },
+          {
+            "time": "٢١:٠٠",
+            "title": "حفل السهرة والموسيقى الحية"
+          },
+          {
+            "time": "٢٣:٠٠",
+            "title": "اختتام مراسم الحفل"
+          }
+        ]
+      },
+      "venue": {
+        "heading": "مكان الحفل",
+        "name": "قاعة قصر البورغيزي الملكية",
+        "address": "العنوان: طريق المطار، حي الأندلس، دبي",
+        "mapUrl": "https://maps.google.com"
+      },
+      "dressCode": {
+        "heading": "الزي المطلوب",
+        "intro": "يسعدنا ويشرفنا تناغم إطلالتكم الأنيقة مع ألوان ثيم الحفل.",
+        "colorsLabel": "لوحة الألوان المقترحة:",
+        "guidance": "للسيدات: فساتين سهرة راقية بألوان الباستيل الناعمة. للرجال: بدلات رسمية أنيقة بدرجات الكحلي والرمادي والبيج الفاخر."
+      },
+      "rsvp": {
+        "heading": "تأكيد الحضور",
+        "sub": "لمساعدتنا في حسن الاستقبال والتنظيم، يرجى التكرم بتأكيد حضوركم مسبقاً.",
+        "nameLabel": "الاسم الكامل",
+        "namePlaceholder": "يرجى كتابة الاسم الكريم هنا...",
+        "attendLabel": "هل ستشرفوننا بالحضور؟",
+        "options": [
+          "نعم، بكل سرور وشرف سأحضر",
+          "للأسف، أعتذر عن الحضور",
+          "سأبلغكم في وقت لاحق"
+        ],
+        "foodLabel": "هل لديكم أي ملاحظات غذائية خاصة؟",
+        "foodPlaceholder": "اكتب ملاحظاتك إن وجدت...",
+        "buttonLabel": "تأكيد الحضور",
+        "modalTitle": "تأكيد الحضور",
+        "modalSubtitle": "يرجى تأكيد الحضور قبل ٣٠ سبتمبر",
+        "submitLabel": "إرسال التأكيد",
+        "successMessage": "شكراً جزيلاً لتأكيدكم! ننتظر رؤيتكم بشوق."
+      },
+      "footer": {
+        "seeYou": "نترقب رؤيتكم بشوق ومحبة!",
+        "couple": "أحمد و نور"
+      }
+    },
+    "alexa-and-richard": {
+      "id": "alexa-and-richard",
+      "language": "en",
+      "direction": "ltr",
+      "couple": {
+        "groom": "Richard",
+        "bride": "Alexa",
+        "symbol": "&",
+        "combined": "Alexa & Richard",
+        "subtitle": "Wedding Celebration"
+      },
+      "sealText": "Click to open",
+      "hero": {
+        "areGettingMarried": "are getting married!",
+        "dateShort": "14.09.2025"
+      },
+      "dateReveal": {
+        "title": "The Date",
+        "scratchInstruction": "✦ Scratch to reveal the date ✦",
+        "day": "14",
+        "month": "September",
+        "year": "2025",
+        "dayLabel": "Day",
+        "monthLabel": "Month",
+        "yearLabel": "Year",
+        "revealBanner": "You're invited!"
+      },
+      "welcome": {
+        "title": "Dear friends and family,",
+        "message": "As we get ready to say “I do,” we feel grateful for the wonderful people in our lives. Your support means the world to us, and we would be honored to have you with us as we begin our life together."
+      },
+      "schedule": {
+        "heading": "Schedule of Events",
+        "items": [
+          {
+            "time": "16:30",
+            "title": "Opening of the doors"
+          },
+          {
+            "time": "17:00",
+            "title": "Ceremony"
+          },
+          {
+            "time": "18:00",
+            "title": "Cocktail and dancing time"
+          },
+          {
+            "time": "20:00",
+            "title": "Dinner"
+          },
+          {
+            "time": "21:00",
+            "title": "Party and Open Bar"
+          },
+          {
+            "time": "23:00",
+            "title": "End of the celebration"
+          }
+        ]
+      },
+      "venue": {
+        "heading": "Wedding Venue",
+        "name": "Villa Borghese",
+        "address": "Address: Puerto Vallarta, MX",
+        "mapUrl": "https://maps.google.com"
+      },
+      "dressCode": {
+        "heading": "Dress Code",
+        "intro": "We would be very happy if your outfit is in the colours of the wedding theme.",
+        "colorsLabel": "Colours:",
+        "guidance": "Ladies: Elegant summer dresses in pastel tones. We recommend bringing a hat and sunglasses for comfort. Gentlemen: Suits or shirts in classic shades. Grey, blue, brown, beige are great choices!"
+      },
+      "rsvp": {
+        "heading": "Confirm Your Attendance",
+        "sub": "To help us prepare for a joyful celebration, kindly confirm your attendance.",
+        "nameLabel": "Your name",
+        "namePlaceholder": "Please enter your name...",
+        "attendLabel": "Will you come?",
+        "options": [
+          "Yes, I will",
+          "Unfortunately, I cant :(",
+          "Ill tell you a bit later"
+        ],
+        "foodLabel": "Do have have any food intolerances?",
+        "foodPlaceholder": "Any specific allergies or notes...",
+        "buttonLabel": "RSVP",
+        "modalTitle": "Confirm Your Attendance!",
+        "modalSubtitle": "Please RSVP before September 30",
+        "submitLabel": "Submit",
+        "successMessage": "Thank you for confirming! We look forward to seeing you."
+      },
+      "footer": {
+        "seeYou": "Hope to see you there!",
+        "couple": "Alexa & Richard"
+      }
+    }
+  }
+}
