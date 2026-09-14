@@ -102,3 +102,106 @@ body[dir="rtl"] #audio-control {
   opacity: 0.92;
   transform: translateY(-1px);
 }
+
+/* ==========================================================================
+   Luxury Invitation Envelope & Opening Animation Controller
+   ========================================================================== */
+
+/* Ensure envelope and audio records are always visible across all viewports */
+#rec2442650973,
+#rec2442650983 {
+  display: block !important;
+}
+
+/* Strict Scroll Lock when invitation is unopened */
+html.invitation-locked,
+body.invitation-locked {
+  overflow: hidden !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-height: 100vh !important;
+  width: 100% !important;
+  position: fixed !important;
+  touch-action: none !important;
+  -webkit-overflow-scrolling: auto !important;
+  overscroll-behavior: none !important;
+}
+
+/* Fullscreen Envelope Cover Modal */
+#rec2442650973 {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  z-index: 99999 !important;
+  background-color: #f7f3ee !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#rec2442650973 .t396 {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+}
+
+#rec2442650973 .t396__artboard {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 100% !important;
+  transform: translateY(-50%) !important;
+  background: transparent !important;
+}
+
+/* Hide all subsequent invitation records before opening */
+body:not(.invitation-opened):not(.invitation-opening) #allrecords > .t-rec:not(#rec2442650973):not(#rec2442650983) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Reveal content as the envelope flaps open */
+body.invitation-opening #allrecords > .t-rec:not(#rec2442650973):not(#rec2442650983) {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 1.2s ease-in;
+}
+
+body.invitation-opened #allrecords > .t-rec:not(#rec2442650973):not(#rec2442650983) {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* Dismiss envelope cover once opened */
+body.invitation-opened #rec2442650973 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  display: none !important;
+}
+
+/* Wax seal button & label interactive styling */
+#rec2442650973 .popup-enter,
+#rec2442650973 .tn-elem[data-elem-id="1773847037346"],
+#rec2442650973 .tn-elem[data-elem-id="1777183175514000001"],
+#rec2442650973 [field="tn_text_1777183175514000001"] {
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+#rec2442650973 .popup-enter {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.25s ease !important;
+}
+

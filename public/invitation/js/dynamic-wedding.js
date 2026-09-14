@@ -645,6 +645,99 @@
     }
   }
 
+  function initEnvelopeController() {
+    let isOpened = false;
+    let isOpening = false;
+
+    // 1. Immediately apply scroll lock to html and body
+    const lockScroll = () => {
+      document.documentElement.classList.add('invitation-locked');
+      document.body.classList.add('invitation-locked');
+      window.scrollTo(0, 0);
+    };
+    lockScroll();
+
+    // 2. Strict scroll prevention while unopened
+    const preventScroll = (e) => {
+      if (!isOpened) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    };
+
+    const preventKeyScroll = (e) => {
+      if (!isOpened) {
+        const blockKeys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Spacebar'];
+        if (blockKeys.includes(e.key) || blockKeys.includes(e.code)) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      }
+    };
+
+    window.addEventListener('wheel', preventScroll, { passive: false, capture: true });
+    window.addEventListener('touchmove', preventScroll, { passive: false, capture: true });
+    window.addEventListener('keydown', preventKeyScroll, { passive: false, capture: true });
+    window.addEventListener('scroll', () => {
+      if (!isOpened && (window.scrollX !== 0 || window.scrollY !== 0)) {
+        window.scrollTo(0, 0);
+      }
+    }, { capture: true });
+
+    // 3. Connect wax seal click and seal text click handlers
+    function attachOpenListeners() {
+      const sealBtn = document.querySelector('.popup-enter, [data-elem-id="1773847037346"]');
+      const sealText = document.querySelector('[data-elem-id="1777183175514000001"], [field="tn_text_1777183175514000001"]');
+
+      const triggerOpen = (e) => {
+        if (isOpening || isOpened) return;
+        isOpening = true;
+
+        if (sealBtn && e && e.currentTarget !== sealBtn) {
+          sealBtn.click();
+          return;
+        }
+
+        document.body.classList.add('invitation-opening');
+
+        setTimeout(() => {
+          isOpened = true;
+          isOpening = false;
+
+          document.documentElement.classList.remove('invitation-locked');
+          document.body.classList.remove('invitation-locked', 'invitation-opening');
+          document.body.classList.add('invitation-opened');
+
+          window.removeEventListener('wheel', preventScroll, { capture: true });
+          window.removeEventListener('touchmove', preventScroll, { capture: true });
+          window.removeEventListener('keydown', preventKeyScroll, { capture: true });
+        }, 4600);
+      };
+
+      if (sealBtn) {
+        sealBtn.addEventListener('click', triggerOpen);
+      }
+      if (sealText) {
+        sealText.addEventListener('click', triggerOpen);
+      }
+
+      if (!sealBtn) {
+        setTimeout(attachOpenListeners, 100);
+      }
+    }
+
+    if (document.readyState !== 'loading') {
+      attachOpenListeners();
+    } else {
+      document.addEventListener('DOMContentLoaded', attachOpenListeners);
+    }
+  }
+
+  // Run controller immediately to lock viewport as early as possible
+  initEnvelopeController();
+
   function initDynamicWedding() {
     setupFormStorage();
 
@@ -682,3 +775,4 @@
     initDynamicWedding();
   }
 })();
+
